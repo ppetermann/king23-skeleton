@@ -33,21 +33,17 @@ if (!defined("APP_PATH")) {
 // composer autoload
 require_once APP_PATH."/vendor/autoload.php";
 
-$reg = King23\Core\Registry::getInstance();
-
+/** @var \King23\DI\ContainerInterface $container */
 $container = require_once APP_PATH."/conf/services.php";
 
-// Twig Template configuration
-Twig_Autoloader::register();
-$reg->twig = new Twig_Environment(
-    new Twig_Loader_Filesystem(APP_PATH."/templates"), array(
-        "cache" => APP_PATH."/cache/templates_c",
-        "debug" => true,
-        "auto_reload" => true // remove to disabled recompiling
-    )
-);
+/** @var \King23\Core\SettingsInterface $settings */
+$settings = $container->getInstanceOf(\King23\Core\SettingsInterface::class);
+
+// example settings (example using twig)
+$settings->set('twig.path.templates', APP_PATH.'/templates');
+$settings->set('twig.path.cache', APP_PATH."/cache/templates_c");
+$settings->set('twig.debug', true);
+$settings->set('twig.autoreload', true);
+
 
 require_once "routes.php";
-
-// uncomment the next line if you have Doctrine installed, and configured in the doctrine.php
-//require_once("doctrine.php");

@@ -10,7 +10,8 @@
         "king23/king23": "dev-master",
         "king23/di": "*",
         "knight23/core": "dev-master",
-        "psr/http-message": "1.0.0"
+        "psr/http-message": "1.0.0",
+        "monolog/monolog": "^1.13"
     },
     "require-dev": {
         "devedge/stubs": "*"

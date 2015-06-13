@@ -31,4 +31,7 @@ error_reporting(E_ALL);
 define("APP_PATH", realpath(dirname(__FILE__) . "/.."));
 
 require_once(APP_PATH . "/conf/config.php");
-King23\Core\Router::getInstance()->dispatch($_SERVER["REQUEST_URI"]);
+
+$router = $container->getInstanceOf(\King23\Core\RouterInterface::class);
+$router->dispatch($_SERVER["REQUEST_URI"]);
+
