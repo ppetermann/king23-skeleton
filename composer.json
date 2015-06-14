@@ -12,7 +12,8 @@
         "knight23/core": "dev-master",
         "psr/http-message": "^1.0",
         "monolog/monolog": "^1.13",
-        "zendframework/zend-diactoros": "^1.0"
+        "zendframework/zend-diactoros": "^1.0",
+        "filp/whoops": "~1.1.6"
     },
     "require-dev": {
         "devedge/stubs": "*"
