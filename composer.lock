@@ -157,16 +157,16 @@
         },
         {
             "name": "king23/di",
-            "version": "0.2.0",
+            "version": "0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppetermann/king23-di.git",
-                "reference": "e19af5023eb9a10f90647092e26d82a9b076620b"
+                "reference": "e692e61ef0c83e9f806542e0c4ae64a49afc9a02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppetermann/king23-di/zipball/e19af5023eb9a10f90647092e26d82a9b076620b",
-                "reference": "e19af5023eb9a10f90647092e26d82a9b076620b",
+                "url": "https://api.github.com/repos/ppetermann/king23-di/zipball/e692e61ef0c83e9f806542e0c4ae64a49afc9a02",
+                "reference": "e692e61ef0c83e9f806542e0c4ae64a49afc9a02",
                 "shasum": ""
             },
             "require": {
@@ -192,7 +192,7 @@
                 }
             ],
             "description": "king23 dependency injector",
-            "time": "2015-05-31 13:55:51"
+            "time": "2015-06-13 16:49:46"
         },
         {
             "name": "king23/king23",
