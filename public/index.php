@@ -32,6 +32,6 @@ define("APP_PATH", realpath(dirname(__FILE__) . "/.."));
 
 require_once(APP_PATH . "/conf/config.php");
 
-$router = $container->getInstanceOf(\King23\Core\RouterInterface::class);
-$router->dispatch($_SERVER["REQUEST_URI"]);
-
+/** @var \King23\Http\ApplicationInterface $application */
+$application = $container->getInstanceOf(\King23\Http\ApplicationInterface::class);
+$application->run();

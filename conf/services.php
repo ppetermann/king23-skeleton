@@ -1,4 +1,5 @@
 <?php
+
 $container = new \King23\DI\DependencyContainer();
 
 // this is an arbitrary key value store for settings
@@ -30,14 +31,52 @@ $container->register(
 );
 
 // register a router service
-$container->register(\King23\Core\RouterInterface::class, function() use($container) {
-    return $container->getInstanceOf(\King23\Core\Router::class);
-});
-
+$container->register(
+    \King23\Http\RouterInterface::class,
+    function () use ($container) {
+        return $container->getInstanceOf(\King23\Http\Router::class);
+    }
+);
 
 // register a logging service
-$container->register(\Psr\Log\LoggerInterface::class, function(){
-    return new \Devedge\Log\NoLog();
-});
+$container->register(
+    \Psr\Log\LoggerInterface::class,
+    function () {
+        return new \Devedge\Log\NoLog();
+    }
+);
+
+// lets register the zend-diactoros classes as our psr-7 stuff
+$container->register(
+    \Psr\Http\Message\ServerRequestInterface::class,
+    function () {
+        return \Zend\Diactoros\ServerRequestFactory::fromGlobals($_SERVER, $_GET, $_POST, $_COOKIE, $_FILES);
+    }
+);
+$container->register(
+    \Psr\Http\Message\ResponseInterface::class,
+    function () {
+        return new \Zend\Diactoros\Response();
+    }
+);
+
+// register a middleware queue
+$container->register(
+    \King23\Http\MiddlewareQueueInterface::class,
+    function () use ($container) {
+        /** @var \King23\Http\MiddlewareQueue $queue */
+        $queue = $container->getInstanceOf(\King23\Http\MiddlewareQueue::class);
+        $queue->addMiddleware(\King23\Http\RouterInterface::class);
+        return $queue;
+    }
+);
+
+// register the Application itself
+$container->register(
+    \King23\Http\ApplicationInterface::class,
+    function () use ($container) {
+        return $container->getInstanceOf(\King23\Http\Application::class);
+    }
+);
 
 return $container;

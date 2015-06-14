@@ -1,7 +1,7 @@
 <?php
 /*
  MIT License
- Copyright (c) 2010 Peter Petermann
+ Copyright (c) 2010 - 2015 Peter Petermann
 
  Permission is hereby granted, free of charge, to any person
  obtaining a copy of this software and associated documentation
@@ -26,5 +26,5 @@
 
 */
 
-$router = $container->getInstanceOf(\King23\Core\RouterInterface::class);
+$router = $container->getInstanceOf(\King23\Http\RouterInterface::class);
 $router->addRoute("/", '\EXAMPLE\Views\StaticView', "index", array());

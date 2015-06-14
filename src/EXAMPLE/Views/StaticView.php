@@ -26,9 +26,10 @@
 
 */
 namespace EXAMPLE\Views;
+
 class StaticView extends BaseView
 {
-    protected function index($request)
+    protected function index($params)
     {
         return $this->render("static/index.html", array());
     }
