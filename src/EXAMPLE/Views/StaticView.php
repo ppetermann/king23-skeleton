@@ -29,7 +29,13 @@ namespace EXAMPLE\Views;
 
 class StaticView extends BaseView
 {
-    protected function index($params)
+    /**
+     * @param array $params
+     * @param \Psr\Http\Message\ServerRequestInterface $request
+     * @param \Psr\Http\Message\ResponseInterface $response
+     * @return \Psr\Http\Message\ResponseInterface
+     */
+    protected function index($params, $request, $response)
     {
         return $this->render("static/index.html", array());
     }

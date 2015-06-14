@@ -26,5 +26,6 @@
 
 */
 
+/** @var \King23\Http\RouterInterface $router */
 $router = $container->getInstanceOf(\King23\Http\RouterInterface::class);
 $router->addRoute("/", '\EXAMPLE\Views\StaticView', "index", array());
