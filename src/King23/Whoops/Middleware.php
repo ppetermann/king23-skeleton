@@ -12,7 +12,7 @@ use Whoops\Run;
  *
  * this should also work with other psr-7 middlewars as long as they use
  * the request,response,callable-next signature
- * 
+ *
  * @package King23\Whoops
  */
 class Middleware
