@@ -8,7 +8,7 @@
     "authors": [{ "name": "Peter Petermann", "email": "ppetermann80@gmail.com", "homepage": "http://devedge.eu" }],
     "require": {
         "king23/king23": "dev-master",
-        "king23/di": "*",
+        "king23/di": "~0.2",
         "knight23/core": "dev-master",
         "psr/http-message": "^1.0",
         "monolog/monolog": "^1.13",
@@ -16,7 +16,8 @@
         "filp/whoops": "~1.1.6"
     },
     "require-dev": {
-        "devedge/stubs": "*"
+        "devedge/stubs": "~2.0.0",
+        "mongofill/mongofill": "dev-master"
     },
     "autoload": {
         "psr-4": {
