@@ -17,4 +17,7 @@ require_once "services/twig.php";
 // psr-logger
 require_once "services/logger.php";
 
+// mongodb integration
+require_once "services/mongo.php";
+
 return $container;

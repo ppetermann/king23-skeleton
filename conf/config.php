@@ -45,5 +45,8 @@ $settings->set('twig.path.cache', APP_PATH."/cache/templates_c");
 $settings->set('twig.debug', true);
 $settings->set('twig.autoreload', true);
 
+// mongo
+$settings->set('mongo.dsn', 'mongodb://localhost/King23');
+$settings->set('mongo.db', 'King23');
 
 require_once "routes.php";

@@ -7,7 +7,7 @@
     "license": "MIT",
     "authors": [{ "name": "Peter Petermann", "email": "ppetermann80@gmail.com", "homepage": "http://devedge.eu" }],
     "require": {
-        "king23/king23": "dev-master",
+        "king23/king23": "dev-develop",
         "king23/di": "~0.2",
         "knight23/core": "dev-master",
         "psr/http-message": "^1.0",

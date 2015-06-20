@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "48263c09d332de1af55d19e47a7c115b",
+    "hash": "1251330808b05b52e88338cbdd76864f",
     "packages": [
         {
             "name": "evenement/evenement",
@@ -254,16 +254,16 @@
         },
         {
             "name": "king23/king23",
-            "version": "dev-master",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppetermann/king23.git",
-                "reference": "d3610ececfde7821dd20fc3738071f27774f893f"
+                "reference": "109fa287499cb768576ceb8ac82ec0111ac8685f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppetermann/king23/zipball/d3610ececfde7821dd20fc3738071f27774f893f",
-                "reference": "d3610ececfde7821dd20fc3738071f27774f893f",
+                "url": "https://api.github.com/repos/ppetermann/king23/zipball/109fa287499cb768576ceb8ac82ec0111ac8685f",
+                "reference": "109fa287499cb768576ceb8ac82ec0111ac8685f",
                 "shasum": ""
             },
             "require": {
@@ -271,14 +271,8 @@
                 "twig/twig": "1.18.*"
             },
             "require-dev": {
-                "d11wtq/boris": "1.0.*",
-                "monolog/monolog": "dev-master",
-                "react/react": "~0.4"
+                "devedge/stubs": "~2.0.0"
             },
-            "bin": [
-                "bin/king23.box",
-                "bin/king23"
-            ],
             "type": "library",
             "autoload": {
                 "psr-0": {
@@ -302,7 +296,7 @@
                 "framework",
                 "king23"
             ],
-            "time": "2015-04-04 20:22:10"
+            "time": "2015-06-20 16:19:15"
         },
         {
             "name": "knight23/core",
