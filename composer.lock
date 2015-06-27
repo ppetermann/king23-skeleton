@@ -308,12 +308,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppetermann/king23.git",
-                "reference": "09e832ecfbbc49c1573cbdc55a7a88d1582065c4"
+                "reference": "30c725237877ae8a1bdc4e3b8552ad73eb0616b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppetermann/king23/zipball/09e832ecfbbc49c1573cbdc55a7a88d1582065c4",
-                "reference": "09e832ecfbbc49c1573cbdc55a7a88d1582065c4",
+                "url": "https://api.github.com/repos/ppetermann/king23/zipball/30c725237877ae8a1bdc4e3b8552ad73eb0616b9",
+                "reference": "30c725237877ae8a1bdc4e3b8552ad73eb0616b9",
                 "shasum": ""
             },
             "require": {
@@ -346,7 +346,7 @@
                 "framework",
                 "king23"
             ],
-            "time": "2015-06-21 17:04:58"
+            "time": "2015-06-27 21:31:07"
         },
         {
             "name": "knight23/core",
