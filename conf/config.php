@@ -41,7 +41,7 @@ $settings = $container->getInstanceOf(\King23\Core\SettingsInterface::class);
 
 // example settings (example using twig)
 $settings->set('twig.path.templates', APP_PATH.'/templates');
-$settings->set('twig.path.cache', APP_PATH."/cache/templates_c");
+$settings->set('twig.path.cache', "/tmp/phar.space/cache/templates_c");
 $settings->set('twig.debug', true);
 $settings->set('twig.autoreload', true);
 
@@ -49,4 +49,6 @@ $settings->set('twig.autoreload', true);
 $settings->set('mongo.dsn', 'mongodb://localhost/King23');
 $settings->set('mongo.db', 'King23');
 
-require_once "routes.php";
+require_once APP_PATH . "/conf/routes.php";
+
+return $container;

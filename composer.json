@@ -8,11 +8,12 @@
     "authors": [{ "name": "Peter Petermann", "email": "ppetermann80@gmail.com", "homepage": "http://devedge.eu" }],
     "require": {
         "king23/king23": "dev-develop",
-        "king23/di": "~0.2",
         "knight23/core": "dev-master",
+        "king23/di": "~0.2",
+        "king23/castle23": "dev-master",
         "psr/http-message": "^1.0",
         "monolog/monolog": "^1.13",
-        "zendframework/zend-diactoros": "^1.0",
+        "zendframework/zend-diactoros": "~1.0",
         "filp/whoops": "~1.1.6"
     },
     "require-dev": {
