@@ -37,7 +37,7 @@ class StaticView extends BaseView
      */
     protected function index($params, $request, $response)
     {
-        $response->getBody()->write($this->render("static/index.html", array()));
+        $response->getBody()->write($this->render("static/index.html", []));
         return $response;
     }
 }

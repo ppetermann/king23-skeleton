@@ -18,13 +18,12 @@ require_once APP_PATH . "/conf/services/twig.php";
 require_once APP_PATH . "/conf/services/logger.php";
 
 // mongodb integration
-require_once APP_PATH . "/conf/services/mongo.php";
+// require_once APP_PATH . "/conf/services/mongo.php";
 
-// react php
-require_once APP_PATH . "/conf/services/react.php";
+// react php (enable if you want to use reactphp)
+// require_once APP_PATH . "/conf/services/react.php";
 
-// knight23 php
-require_once APP_PATH . "/conf/services/knight23.php";
-
+// knight23 php (enable if you want to use knight23 stuffs in your app)
+// require_once APP_PATH . "/conf/services/knight23.php";
 
 return $container;

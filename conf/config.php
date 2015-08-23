@@ -27,28 +27,20 @@
 */
 
 if (!defined("APP_PATH")) {
-    define("APP_PATH", realpath(dirname(__FILE__)."/.."));
+    define("APP_PATH", realpath(dirname(__FILE__) . "/.."));
 }
 
 // composer autoload
-require_once APP_PATH."/vendor/autoload.php";
+require_once APP_PATH . "/vendor/autoload.php";
 
+// get the container
 /** @var \King23\DI\ContainerInterface $container */
-$container = require_once APP_PATH."/conf/services.php";
+$container = require_once APP_PATH . "/conf/services.php";
 
-/** @var \King23\Core\SettingsInterface $settings */
-$settings = $container->getInstanceOf(\King23\Core\SettingsInterface::class);
+// load the applications settings
+require_once APP_PATH ."/conf/settings.php";
 
-// example settings (example using twig)
-$settings->set('twig.path.templates', APP_PATH.'/templates');
-$settings->set('twig.path.cache', "/tmp/phar.space/cache/templates_c");
-$settings->set('twig.debug', true);
-$settings->set('twig.autoreload', true);
-
-// mongo
-$settings->set('mongo.dsn', 'mongodb://localhost/King23');
-$settings->set('mongo.db', 'King23');
-
+// load the applications routes
 require_once APP_PATH . "/conf/routes.php";
 
 return $container;
