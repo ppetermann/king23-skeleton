@@ -25,9 +25,9 @@
  OTHER DEALINGS IN THE SOFTWARE.
 
 */
-namespace EXAMPLE\Views;
+namespace EXAMPLE\Controller;
 
-class StaticView extends BaseView
+class StaticController extends BaseController
 {
     /**
      * @param array $params
@@ -41,3 +41,4 @@ class StaticView extends BaseView
         return $response;
     }
 }
+
