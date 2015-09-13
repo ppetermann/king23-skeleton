@@ -13,3 +13,7 @@ $settings->set('twig.autoreload', true);
 // mongo (enable if you want to use mongo)
 //$settings->set('mongo.dsn', 'mongodb://localhost/King23');
 //$settings->set('mongo.db', 'King23');
+
+// a base path (if necessary), remember to add the BasePathStripper Middleware if you want to use this
+// $settings->set('app.basePath', '/random');
+
