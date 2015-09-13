@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "40da328bcc19708aa0084d26e3debc2d",
+    "hash": "dd6d623a1e04691b033e2d9b89c3b513",
     "packages": [
         {
             "name": "filp/whoops",
@@ -105,26 +105,28 @@
         },
         {
             "name": "king23/king23",
-            "version": "dev-develop",
+            "version": "1.0.0-alpha3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppetermann/king23.git",
-                "reference": "3be7f39af320ae85c5dd7bb3696b1bb55a3367f4"
+                "reference": "195224bc284294832e01ace8fb27b9334768dfd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppetermann/king23/zipball/3be7f39af320ae85c5dd7bb3696b1bb55a3367f4",
-                "reference": "3be7f39af320ae85c5dd7bb3696b1bb55a3367f4",
+                "url": "https://api.github.com/repos/ppetermann/king23/zipball/195224bc284294832e01ace8fb27b9334768dfd6",
+                "reference": "195224bc284294832e01ace8fb27b9334768dfd6",
                 "shasum": ""
             },
             "require": {
                 "king23/di": "~1.0",
                 "psr/http-message": "~1.0",
+                "psr/http-message-implementation": "1.0.0",
                 "psr/log-implementation": "1.0.0",
                 "twig/twig": "~1.20"
             },
             "require-dev": {
-                "devedge/stubs": "~2.0.0"
+                "devedge/stubs": "~2.0.0",
+                "zendframework/zend-diactoros": "~1.1"
             },
             "type": "library",
             "autoload": {
@@ -149,7 +151,7 @@
                 "framework",
                 "king23"
             ],
-            "time": "2015-09-13 11:55:10"
+            "time": "2015-09-13 14:00:59"
         },
         {
             "name": "monolog/monolog",
@@ -475,7 +477,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "king23/king23": 20
+        "king23/king23": 15
     },
     "prefer-stable": false,
     "prefer-lowest": false,
