@@ -30,12 +30,11 @@ namespace EXAMPLE\Controller;
 class StaticController extends BaseController
 {
     /**
-     * @param array $params
      * @param \Psr\Http\Message\ServerRequestInterface $request
      * @param \Psr\Http\Message\ResponseInterface $response
      * @return \Psr\Http\Message\ResponseInterface
      */
-    protected function index($params, $request, $response)
+    protected function index($request, $response)
     {
         $response->getBody()->write($this->render("static/index.html", []));
         return $response;
