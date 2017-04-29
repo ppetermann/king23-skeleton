@@ -3,9 +3,6 @@
 $container->register(
     \King23\TwigIntegration\TwigInterface::class,
     function () use ($container) {
-        // Twig Template configuration
-        Twig_Autoloader::register();
-
         $settings = $container->getInstanceOf(\King23\Core\SettingsInterface::class);
 
         return new King23\TwigIntegration\TwigWrapper(
