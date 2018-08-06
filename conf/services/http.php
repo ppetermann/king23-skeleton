@@ -1,18 +1,25 @@
-<?php
+<?php /** @noinspection PhpUnhandledExceptionInspection */
 
-// lets register the zend-diactoros classes as our psr-7 stuff
-// request class
-$container->register(
-    \Psr\Http\Message\ServerRequestInterface::class,
-    function () {
-        return \Zend\Diactoros\ServerRequestFactory::fromGlobals($_SERVER, $_GET, $_POST, $_COOKIE, $_FILES);
-    }
-);
-// response class
-$container->register(
-    \Psr\Http\Message\ResponseInterface::class,
-    function () {
-        return new \Zend\Diactoros\Response();
+$psr17factory = function () {
+    return new \Nyholm\Psr7\Factory\Psr17Factory();
+};
+
+/** @var \King23\DI\ContainerInterface $container */
+$container->register(\Psr\Http\Message\RequestFactoryInterface::class, $psr17factory);
+$container->register(\Psr\Http\Message\ServerRequestFactoryInterface::class, $psr17factory);
+$container->register(\Psr\Http\Message\ResponseFactoryInterface::class, $psr17factory);
+$container->register(\Psr\Http\Message\StreamFactoryInterface::class, $psr17factory);
+$container->register(\Psr\Http\Message\UploadedFileFactoryInterface::class, $psr17factory);
+$container->register(\Psr\Http\Message\UriFactoryInterface::class, $psr17factory);
+
+$container->register(\Psr\Http\Message\ServerRequestInterface::class,
+    function () use ($container) {
+        return (new \Nyholm\Psr7Server\ServerRequestCreator(
+            $container->getInstanceOf(\Psr\Http\Message\RequestFactoryInterface::class),
+            $container->getInstanceOf(\Psr\Http\Message\UriFactoryInterface::class),
+            $container->getInstanceOf(\Psr\Http\Message\UploadedFileFactoryInterface::class),
+            $container->getInstanceOf(\Psr\Http\Message\StreamFactoryInterface::class)
+        ))->fromGlobals();
     }
 );
 

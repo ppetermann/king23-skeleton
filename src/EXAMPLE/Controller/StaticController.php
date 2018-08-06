@@ -29,30 +29,30 @@
 namespace EXAMPLE\Controller;
 
 use King23\TwigIntegration\TwigInterface;
+use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Log\LoggerInterface;
 
 class StaticController extends BaseController
 {
     /**
-     * @var ResponseInterface
+     * @var ResponseFactoryInterface
      */
-    private $response;
+    private $responseFactory;
 
-    public function __construct(TwigInterface $twig, LoggerInterface $log, ResponseInterface $response)
+    public function __construct(TwigInterface $twig, LoggerInterface $log, ResponseFactoryInterface $response)
     {
         parent::__construct($twig, $log);
-        $this->response = $response;
+        $this->responseFactory = $response;
     }
 
     /**
      * @param \Psr\Http\Message\ServerRequestInterface $request
-     * @param \Psr\Http\Message\ResponseInterface $response
      * @return \Psr\Http\Message\ResponseInterface
      */
     protected function index($request)
     {
-        $response = $this->response;
+        $response = $this->responseFactory->createResponse();
         $response->getBody()->write($this->render("static/index.html", []));
         return $response;
     }
