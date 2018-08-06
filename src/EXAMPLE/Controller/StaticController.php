@@ -30,7 +30,6 @@ namespace EXAMPLE\Controller;
 
 use King23\TwigIntegration\TwigInterface;
 use Psr\Http\Message\ResponseFactoryInterface;
-use Psr\Http\Message\ResponseInterface;
 use Psr\Log\LoggerInterface;
 
 class StaticController extends BaseController

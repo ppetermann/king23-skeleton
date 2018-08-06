@@ -109,12 +109,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppetermann/king23.git",
-                "reference": "5fc19fc83d0d7052f9f68ce580a4e734f046073a"
+                "reference": "a0b4791b80678a54b1ca7c23bf45c48e1d3248c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppetermann/king23/zipball/5fc19fc83d0d7052f9f68ce580a4e734f046073a",
-                "reference": "5fc19fc83d0d7052f9f68ce580a4e734f046073a",
+                "url": "https://api.github.com/repos/ppetermann/king23/zipball/a0b4791b80678a54b1ca7c23bf45c48e1d3248c3",
+                "reference": "a0b4791b80678a54b1ca7c23bf45c48e1d3248c3",
                 "shasum": ""
             },
             "require": {
@@ -158,7 +158,7 @@
                 "source": "https://github.com/ppetermann/king23/tree/develop",
                 "issues": "https://github.com/ppetermann/king23/issues"
             },
-            "time": "2018-08-06T12:01:51+00:00"
+            "time": "2018-08-06T12:10:41+00:00"
         },
         {
             "name": "monolog/monolog",
