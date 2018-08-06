@@ -25,17 +25,34 @@
  OTHER DEALINGS IN THE SOFTWARE.
 
 */
+
 namespace EXAMPLE\Controller;
+
+use King23\TwigIntegration\TwigInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Log\LoggerInterface;
 
 class StaticController extends BaseController
 {
+    /**
+     * @var ResponseInterface
+     */
+    private $response;
+
+    public function __construct(TwigInterface $twig, LoggerInterface $log, ResponseInterface $response)
+    {
+        parent::__construct($twig, $log);
+        $this->response = $response;
+    }
+
     /**
      * @param \Psr\Http\Message\ServerRequestInterface $request
      * @param \Psr\Http\Message\ResponseInterface $response
      * @return \Psr\Http\Message\ResponseInterface
      */
-    protected function index($request, $response)
+    protected function index($request)
     {
+        $response = $this->response;
         $response->getBody()->write($this->render("static/index.html", []));
         return $response;
     }

@@ -1,9 +1,9 @@
 <?php
 // register a middleware queue
 $container->register(
-    \King23\Http\MiddlewareQueueInterface::class,
+    \Psr\Http\Server\RequestHandlerInterface::class,
     function () use ($container) {
-        /** @var \King23\Http\MiddlewareQueue $queue */
+        /** @var \King23\Http\MiddlewareQueueInterface $queue */
         $queue = $container->getInstanceOf(\King23\Http\MiddlewareQueue::class);
 
         // uncomment the next line to add the BasePathStripper Middleware
