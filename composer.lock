@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b8d66b2bbd8167be0d7e995644570450",
+    "content-hash": "99738361f48c04706c528bb3b1aebd7d",
     "packages": [
         {
             "name": "filp/whoops",
@@ -109,16 +109,16 @@
         },
         {
             "name": "king23/king23",
-            "version": "3.0.0-alpha3",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppetermann/king23.git",
-                "reference": "7b47fa8e21e2ced1a920241c38cb2dfdd37d6dc6"
+                "reference": "3bdd93ed6bb09983b02b138de6f6ca17c199c7d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppetermann/king23/zipball/7b47fa8e21e2ced1a920241c38cb2dfdd37d6dc6",
-                "reference": "7b47fa8e21e2ced1a920241c38cb2dfdd37d6dc6",
+                "url": "https://api.github.com/repos/ppetermann/king23/zipball/3bdd93ed6bb09983b02b138de6f6ca17c199c7d6",
+                "reference": "3bdd93ed6bb09983b02b138de6f6ca17c199c7d6",
                 "shasum": ""
             },
             "require": {
@@ -143,6 +143,7 @@
                     "King23\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -159,11 +160,7 @@
                 "framework",
                 "king23"
             ],
-            "support": {
-                "source": "https://github.com/ppetermann/king23/tree/3.0.0-alpha3",
-                "issues": "https://github.com/ppetermann/king23/issues"
-            },
-            "time": "2018-08-25T16:13:45+00:00"
+            "time": "2018-08-25T20:13:32+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -988,9 +985,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "king23/king23": 15
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
