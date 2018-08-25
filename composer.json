@@ -6,14 +6,6 @@
     "homepage": "http://king23.net",
     "license": "MIT",
     "authors": [{ "name": "Peter Petermann", "email": "ppetermann80@gmail.com", "homepage": "http://devedge.eu" }],
-
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/ppetermann/king23"
-        }
-    ],
-
     "require": {
         "king23/king23": "~3.0.0-alpha3",
         "king23/di": "~2.0",
