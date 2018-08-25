@@ -27,7 +27,7 @@
 */
 
 /** @var \King23\Http\RouterInterface $router */
-$router = $container->getInstanceOf(\King23\Http\RouterInterface::class);
+$router = $container->get(\King23\Http\RouterInterface::class);
 
 // default route
 $router->addRoute("/", EXAMPLE\Controller\StaticController::class, "index", []);

@@ -3,7 +3,7 @@
 $container->register(
     \Knight23\Core\Output\WriterInterface::class,
     function () use ($container) {
-        return $container->getInstanceOf(\Knight23\Core\Output\ColoredTextWriter::class);
+        return $container->get(\Knight23\Core\Output\ColoredTextWriter::class);
     }
 );
 
@@ -19,7 +19,7 @@ $container->register(
 $container->register(
     \Knight23\Core\Banner\BannerInterface::class,
     function () use ($container) {
-        return $container->getInstanceOf(\Castle23\Banner::class);
+        return $container->get(\Castle23\Banner::class);
     }
 );
 
@@ -29,6 +29,6 @@ $container->register(
     \Knight23\Core\RunnerInterface::class,
     function () use ($container) {
         // instance for the class
-        return $container->getInstanceOf(\Knight23\Core\Knight23::class);
+        return $container->get(\Knight23\Core\Knight23::class);
     }
 );

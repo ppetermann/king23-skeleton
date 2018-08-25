@@ -15,10 +15,10 @@ $container->register(\Psr\Http\Message\UriFactoryInterface::class, $psr17factory
 $container->register(\Psr\Http\Message\ServerRequestInterface::class,
     function () use ($container) {
         return (new \Nyholm\Psr7Server\ServerRequestCreator(
-            $container->getInstanceOf(\Psr\Http\Message\RequestFactoryInterface::class),
-            $container->getInstanceOf(\Psr\Http\Message\UriFactoryInterface::class),
-            $container->getInstanceOf(\Psr\Http\Message\UploadedFileFactoryInterface::class),
-            $container->getInstanceOf(\Psr\Http\Message\StreamFactoryInterface::class)
+            $container->get(\Psr\Http\Message\RequestFactoryInterface::class),
+            $container->get(\Psr\Http\Message\UriFactoryInterface::class),
+            $container->get(\Psr\Http\Message\UploadedFileFactoryInterface::class),
+            $container->get(\Psr\Http\Message\StreamFactoryInterface::class)
         ))->fromGlobals();
     }
 );
@@ -27,7 +27,7 @@ $container->register(\Psr\Http\Message\ServerRequestInterface::class,
 $container->register(
     \King23\Http\RouterInterface::class,
     function () use ($container) {
-        return $container->getInstanceOf(\King23\Http\Router::class);
+        return $container->get(\King23\Http\Router::class);
     }
 );
 
@@ -35,6 +35,6 @@ $container->register(
 $container->register(
     \King23\Http\ApplicationInterface::class,
     function () use ($container) {
-        return $container->getInstanceOf(\King23\Http\Application::class);
+        return $container->get(\King23\Http\Application::class);
     }
 );

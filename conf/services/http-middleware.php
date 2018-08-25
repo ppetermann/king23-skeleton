@@ -4,7 +4,7 @@ $container->register(
     \Psr\Http\Server\RequestHandlerInterface::class,
     function () use ($container) {
         /** @var \King23\Http\MiddlewareQueueInterface $queue */
-        $queue = $container->getInstanceOf(\King23\Http\MiddlewareQueue::class);
+        $queue = $container->get(\King23\Http\MiddlewareQueue::class);
 
         // uncomment the next line to add the BasePathStripper Middleware
         // $queue->addMiddleware(\King23\Http\Middleware\BasePathStripper::class);

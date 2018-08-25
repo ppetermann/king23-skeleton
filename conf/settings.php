@@ -2,7 +2,7 @@
 // this file contains the settings
 
 /** @var \King23\Core\SettingsInterface $settings */
-$settings = $container->getInstanceOf(\King23\Core\SettingsInterface::class);
+$settings = $container->get(\King23\Core\SettingsInterface::class);
 
 // example settings for twig
 $settings->set('twig.path.templates', APP_PATH . '/templates');

@@ -33,5 +33,5 @@ define("APP_PATH", realpath(dirname(__FILE__) . "/.."));
 require_once(APP_PATH . "/conf/config.php");
 
 /** @var \King23\Http\ApplicationInterface $application */
-$application = $container->getInstanceOf(\King23\Http\ApplicationInterface::class);
+$application = $container->get(\King23\Http\ApplicationInterface::class);
 $application->run();
