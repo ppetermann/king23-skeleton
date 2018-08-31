@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "99738361f48c04706c528bb3b1aebd7d",
+    "content-hash": "1dbf1ad2710fe7bf91fabf78e4151887",
     "packages": [
         {
             "name": "filp/whoops",
@@ -109,16 +109,16 @@
         },
         {
             "name": "king23/king23",
-            "version": "3.0.0",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppetermann/king23.git",
-                "reference": "3bdd93ed6bb09983b02b138de6f6ca17c199c7d6"
+                "reference": "d8a704aeb738e1dcb7a1965aae1b7a1ead974df0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppetermann/king23/zipball/3bdd93ed6bb09983b02b138de6f6ca17c199c7d6",
-                "reference": "3bdd93ed6bb09983b02b138de6f6ca17c199c7d6",
+                "url": "https://api.github.com/repos/ppetermann/king23/zipball/d8a704aeb738e1dcb7a1965aae1b7a1ead974df0",
+                "reference": "d8a704aeb738e1dcb7a1965aae1b7a1ead974df0",
                 "shasum": ""
             },
             "require": {
@@ -160,7 +160,7 @@
                 "framework",
                 "king23"
             ],
-            "time": "2018-08-25T20:13:32+00:00"
+            "time": "2018-08-31T15:41:05+00:00"
         },
         {
             "name": "monolog/monolog",

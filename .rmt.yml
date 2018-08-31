@@ -39,5 +39,6 @@ master:
             tag-prefix: ''         # No more prefix for tags
     pre-release-actions:
         changelog-update:          # Update a CHANGELOG file before the release
-            format: semantic
+            format: markdown
+            file: CHANGELOG.md
         vcs-commit: ~              # Commit the CHANGELOG
