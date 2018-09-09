@@ -3,7 +3,7 @@
 $container->register(
     \King23\TwigIntegration\TwigInterface::class,
     function () use ($container) {
-        $settings = $container->get(\King23\Core\SettingsInterface::class);
+        $settings = $container->get(\King23\Settings\SettingsInterface::class);
 
         return new King23\TwigIntegration\TwigWrapper(
             new Twig_Loader_Filesystem($settings->get('twig.path.templates', APP_PATH.'/templates')),

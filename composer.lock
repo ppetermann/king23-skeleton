@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1dbf1ad2710fe7bf91fabf78e4151887",
+    "content-hash": "63bb0a4574ea414f148336b9c1fba474",
     "packages": [
         {
             "name": "filp/whoops",
@@ -109,16 +109,16 @@
         },
         {
             "name": "king23/king23",
-            "version": "4.0.0",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ppetermann/king23.git",
-                "reference": "d8a704aeb738e1dcb7a1965aae1b7a1ead974df0"
+                "reference": "3495b0d6a2ec44e3a527838c3fc8c1ee6584362f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ppetermann/king23/zipball/d8a704aeb738e1dcb7a1965aae1b7a1ead974df0",
-                "reference": "d8a704aeb738e1dcb7a1965aae1b7a1ead974df0",
+                "url": "https://api.github.com/repos/ppetermann/king23/zipball/3495b0d6a2ec44e3a527838c3fc8c1ee6584362f",
+                "reference": "3495b0d6a2ec44e3a527838c3fc8c1ee6584362f",
                 "shasum": ""
             },
             "require": {
@@ -160,7 +160,7 @@
                 "framework",
                 "king23"
             ],
-            "time": "2018-08-31T15:41:05+00:00"
+            "time": "2018-09-09T14:26:06+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -242,16 +242,16 @@
         },
         {
             "name": "nyholm/psr7",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Nyholm/psr7.git",
-                "reference": "0f68d7130e5fe0a76704ba62a9131e66620a698e"
+                "reference": "02a20d5e9241daefd68935f7a43d9a7a8b4b6277"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Nyholm/psr7/zipball/0f68d7130e5fe0a76704ba62a9131e66620a698e",
-                "reference": "0f68d7130e5fe0a76704ba62a9131e66620a698e",
+                "url": "https://api.github.com/repos/Nyholm/psr7/zipball/02a20d5e9241daefd68935f7a43d9a7a8b4b6277",
+                "reference": "02a20d5e9241daefd68935f7a43d9a7a8b4b6277",
                 "shasum": ""
             },
             "require": {
@@ -300,20 +300,20 @@
                 "psr-17",
                 "psr-7"
             ],
-            "time": "2018-08-02T13:49:19+00:00"
+            "time": "2018-09-02T11:50:33+00:00"
         },
         {
             "name": "nyholm/psr7-server",
-            "version": "0.2.1",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Nyholm/psr7-server.git",
-                "reference": "d7f72c4a57acf774d0049e46091929803976283b"
+                "reference": "1b71a848fcb066fb805b7a9ab3f41ff65bffcde8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Nyholm/psr7-server/zipball/d7f72c4a57acf774d0049e46091929803976283b",
-                "reference": "d7f72c4a57acf774d0049e46091929803976283b",
+                "url": "https://api.github.com/repos/Nyholm/psr7-server/zipball/1b71a848fcb066fb805b7a9ab3f41ff65bffcde8",
+                "reference": "1b71a848fcb066fb805b7a9ab3f41ff65bffcde8",
                 "shasum": ""
             },
             "require": {
@@ -352,7 +352,7 @@
                 "psr-17",
                 "psr-7"
             ],
-            "time": "2018-08-02T20:01:51+00:00"
+            "time": "2018-09-02T10:41:28+00:00"
         },
         {
             "name": "php-http/message-factory",

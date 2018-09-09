@@ -12,8 +12,8 @@ $container->register(
 
 // we create a regular MongoDB connection
 $container->register(\MongoDB::class, function( ) use($container) {
-    /** @var \King23\Core\SettingsInterface $settings */
-    $settings = $container->get(\King23\Core\SettingsInterface::class);
+    /** @var \King23\Settings\SettingsInterface $settings */
+    $settings = $container->get(\King23\Settings\SettingsInterface::class);
     $connection = new MongoClient($settings->get('mongo.dsn'));
     return $connection->{$settings->get('mongo.db')};
 });
